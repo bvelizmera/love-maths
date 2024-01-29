@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let button of buttons) {
 
-        button.addEventListener("click", function () {
+        button.addEventListener("click", function() {
 
             if (this.getAttribute("data-type") === "submit") {
                 alert("You clicked Submit!");
@@ -14,25 +14,31 @@ document.addEventListener("DOMContentLoaded", function () {
                 let gameType = this.getAttribute("data-type");
                 alert(`You clicked ${gameType}`);
             }
-        })
+        });
 
 
     }
 })
-
+/**
+ * The main game "loop", called when the scrip first loaded
+ * and after the user's answers has been processed
+ */
 function runGame() {
 
+    //Creates two random numbers 1-25
+    let num1 = Math.floor(Math.random() * 25) + 1;
+    let num2 = Math.floor(Math.random() * 25) + 1;
 }
 
-function checkAnswer{
+function checkAnswer(){
 
 }
 
-function calculateCorrectAnswer {
+function calculateCorrectAnswer() {
 
 }
 
-function incrementScore {
+function incrementScore() {
 
 }
 
@@ -40,14 +46,14 @@ function incrementWrongAnswer() {
 
 }
 
-function displaAddition {
+function displaAddition () {
 
 }
 
-function displaySubstraction {
+function displaySubstraction () {
 
 }
 
-function displayMultiplication {
+function displayMultiplication() {
 
 }
